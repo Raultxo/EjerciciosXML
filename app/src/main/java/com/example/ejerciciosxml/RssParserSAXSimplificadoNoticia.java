@@ -11,11 +11,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RssParserSAXSimplificado {
+public class RssParserSAXSimplificadoNoticia {
 
     private final URL rssUrl;
     private Noticia noticiaActual;
-    public RssParserSAXSimplificado(String url) {
+    public RssParserSAXSimplificadoNoticia(String url) {
         try {
             this.rssUrl = new URL (url);
         } catch (MalformedURLException e) {

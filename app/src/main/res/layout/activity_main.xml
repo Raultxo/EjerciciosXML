@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
 
-    <ListView
-        android:id="@+id/listaNoticias"
+    <Button
+        android:id="@+id/btnLeerFichInterno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginHorizontal="5sp"
+        android:onClick="ejercicio1"
+        android:text="@string/ejercicio1"
+        android:textSize="9sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/btnLeerFichExterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5sp"
+        android:onClick="ejercicio2"
+        android:text="@string/ejercicio2"
+        android:textSize="9sp"
+        tools:ignore="SmallSp" />
+
+
+</LinearLayout>
